@@ -26,9 +26,14 @@ public class AceptaElRetoSombrasEnElCamping {
             int sombras = 0;
             int columnas = Integer.parseInt(entrada1.split(" ")[0]);
             int filas = Integer.parseInt(entrada1.split(" ")[1]);
+            int[][] mapa = new int[columnas * filas][columnas * filas];
             int arboles = Integer.parseInt(entrada1.split(" ")[3]);
-            for(int n = 0; n < arboles; n++){
-                
+            String[] coords = bf.readLine().split(" ");
+            for(int n = 0; n < arboles; n = n + 2){
+                int[] comprobar = {Integer.parseInt(coords[n]), Integer.parseInt(coords[n + 1])};
+                if(comprobar[0] - 1 >= 0 && comprobar[1] - 1 >= 0){
+                    
+                }
             }
             System.out.println(sombras);
         }
