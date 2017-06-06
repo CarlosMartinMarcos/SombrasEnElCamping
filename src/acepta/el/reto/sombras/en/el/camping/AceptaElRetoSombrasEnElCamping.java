@@ -5,6 +5,10 @@
  */
 package acepta.el.reto.sombras.en.el.camping;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  *
  * @author DAM
@@ -14,8 +18,20 @@ public class AceptaElRetoSombrasEnElCamping {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        while (true) { 
+            String entrada1 = bf.readLine();
+            if(entrada1.equals("0 0 0"))break;
+            int sombras = 0;
+            int columnas = Integer.parseInt(entrada1.split(" ")[0]);
+            int filas = Integer.parseInt(entrada1.split(" ")[1]);
+            int arboles = Integer.parseInt(entrada1.split(" ")[3]);
+            for(int n = 0; n < arboles; n++){
+                
+            }
+            System.out.println(sombras);
+        }
     }
     
 }
